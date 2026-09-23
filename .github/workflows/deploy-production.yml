@@ -70,7 +70,7 @@ jobs:
   deploy:
     needs: validate
     if: >-
-      github.repository == 'ekalvi/erdos-193' &&
+      github.repository == 'q5m-ai/erdos-193' &&
       github.ref == 'refs/heads/main' &&
       (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     environment: production
@@ -87,7 +87,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$GITHUB_REPOSITORY" = "ekalvi/erdos-193"
+          test "$GITHUB_REPOSITORY" = "q5m-ai/erdos-193"
           test "$GITHUB_REF" = "refs/heads/main"
           test "$GITHUB_EVENT_NAME" = "push" -o "$GITHUB_EVENT_NAME" = "workflow_dispatch"
           test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
@@ -99,7 +99,7 @@ jobs:
           set -euo pipefail
           source=/home/q5m/code/erdos-193
           test "$(stat -c %U "$source")" = "q5m"
-          test "$(git -C "$source" remote get-url origin)" = "https://github.com/ekalvi/erdos-193"
+          test "$(git -C "$source" remote get-url origin)" = "https://github.com/q5m-ai/erdos-193"
           test -z "$(git -C "$source" status --porcelain)"
           git -C "$source" fetch --force --prune origin '+refs/heads/main:refs/remotes/origin/main'
           test "$(git -C "$source" rev-parse refs/remotes/origin/main)" = "$GITHUB_SHA"

@@ -42,8 +42,8 @@ mechanism or the 3D step-count/collinearity trade-off. The four-displacement
 return draft would give $C_3(4)\le3$ if vetted, not triple avoidance.
 Applications are optional research questions, not established
 engineering consequences. Related exploration remains separate in
-[PR #38](https://github.com/ekalvi/erdos-193/pull/38) and
-[PR #44](https://github.com/ekalvi/erdos-193/pull/44); those titles are not evidence
+[PR #38](https://github.com/q5m-ai/erdos-193/pull/38) and
+[PR #44](https://github.com/q5m-ai/erdos-193/pull/44); those titles are not evidence
 of a validated application and those branches are not folded into this checkpoint.
 
 ## 2. Read the source manuscripts with attribution

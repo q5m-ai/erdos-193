@@ -101,7 +101,7 @@ test('public timeline matches selector evidence without promoting its scope',()=
   assert.match(section,/No four- or five-vector construction was found; the global minima remain open/);
   assert.match(section,/not a global lower bound or an all-block-size theorem/);
   assert.match(section,/The original Erdős 193 theorem is unchanged/);
-  assert.match(section,/href="https:\/\/github\.com\/ekalvi\/erdos-193\/blob\/main\/research\/unit-step\/tracks\/HIGHER-SIGN-TOPOLOGIES\.md"/);
+  assert.match(section,/href="https:\/\/github\.com\/q5m-ai\/erdos-193\/blob\/main\/research\/unit-step\/tracks\/HIGHER-SIGN-TOPOLOGIES\.md"/);
   for(const L of [8,16]) {
     const result=JSON.parse(fs.readFileSync(`research/unit-step/checks/signed-phase-overlap-${L}.json`,'utf8'));
     const row=section.match(new RegExp(`<li\\b[^>]*data-block-size="${L}"[^>]*>[\\s\\S]*?<\\/li>`))?.[0];

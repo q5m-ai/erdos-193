@@ -70,7 +70,7 @@ class ProductionContract(unittest.TestCase):
         self.assertEqual(self.job['environment'], 'production')
         self.assertEqual(self.job['runs-on'], ['self-hosted', 'Linux', 'X64', 'erdos-193-deploy'])
         guard = self.job['if']
-        for required in ["github.repository == 'ekalvi/erdos-193'",
+        for required in ["github.repository == 'q5m-ai/erdos-193'",
                          "github.ref == 'refs/heads/main'",
                          "github.event_name == 'push'", "github.event_name == 'workflow_dispatch'"]:
             self.assertIn(required, guard)
