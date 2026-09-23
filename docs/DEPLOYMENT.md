@@ -76,7 +76,7 @@ longer a live origin.
 
 The initial production cutover used exact merged commit
 `a68aa2276213112b94eaf6473a27dae835086c97`. GitHub Actions run
-[`32443889384`](https://github.com/ekalvi/erdos-193/actions/runs/32443889384)
+[`32443889384`](https://github.com/q5m-ai/erdos-193/actions/runs/32443889384)
 passed the hosted image gate and then deployed that exact commit on
 `erdos-193-n02`. Pull request run `32443847484` passed the hosted gate while the
 self-hosted deploy job was skipped.
